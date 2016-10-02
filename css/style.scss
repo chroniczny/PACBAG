@@ -22,26 +22,49 @@ $logo-height: 274px;
   }
 }
 
-@-webkit-keyframes slide-pac {
+
+@-moz-keyframes slide-pac {
   0% {
-    background-image: url("../images/LOGO_pacbag_s5.png");
+    -moz-background-image: url("../images/LOGO_pacbag_s5.png");
   }
   20% {
-    background-image: url("../images/LOGO_pacbag_s1.png");
+    -moz-background-image: url("../images/LOGO_pacbag_s1.png");
   }
   40% {
-    background-image: url("../images/LOGO_pacbag_s2.png");
+    -moz-background-image: url("../images/LOGO_pacbag_s2.png");
   }
   60% {
-    background-image: url("../images/LOGO_pacbag_s3.png");
+    -moz-background-image: url("../images/LOGO_pacbag_s3.png");
   }
   80% {
-    background-image: url("../images/LOGO_pacbag_s4.png");
+    -moz-background-image: url("../images/LOGO_pacbag_s4.png");
   }
   100% {
-    background-image: url("../images/LOGO_pacbag_s5.png");
+    -moz-background-image: url("../images/LOGO_pacbag_s5.png");
   }
 }
+
+@-webkit-keyframes slide-pac  {
+  0% {
+    -webkit-background-image: url("../images/LOGO_pacbag_s5.png");
+  }
+  20% {
+    -webkit-background-image: url("../images/LOGO_pacbag_s1.png");
+  }
+  40% {
+    -webkit-background-image: url("../images/LOGO_pacbag_s2.png");
+  }
+  60% {
+    -webkit-background-image: url("../images/LOGO_pacbag_s3.png");
+  }
+  80% {
+    -webkit-background-image: url("../images/LOGO_pacbag_s4.png");
+  }
+  100% {
+    -webkit-background-image: url("../images/LOGO_pacbag_s5.png");
+  }
+}
+
 
 body {
   background-color: black;
@@ -98,12 +121,21 @@ li {
 
 .forLogo {
   margin: 5% auto;
-  animation: slide-pac 10s infinite;
-  -webkit-animation: slide-pac 10s infinite;
+  background-color: black;
+//  animation: slide-pac 10s infinite;
+//  -moz-animation: slide-pac 10s infinite;
+//  -webkit-animation: slide-pac 10s infinite;
   background-size: contain;
   background-repeat: no-repeat;
   & .logo {
+//    background-color: black;
     max-width: 100%;
+    animation: slide-pac 10s infinite;
+    -moz-animation: slide-pac 10s infinite;
+    -webkit-animation: slide-pac 10s infinite;
+  }
+  &:hover {
+    background-image: url("../images/LOGO_pacbag_s3.png");
   }
 
   @media (max-width: 410px) {
