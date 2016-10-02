@@ -1,0 +1,118 @@
+@keyframes slide-pac {
+  0% {
+    background-image: url("../images/LOGO_pacbag_s5.png"); }
+  20% {
+    background-image: url("../images/LOGO_pacbag_s1.png"); }
+  40% {
+    background-image: url("../images/LOGO_pacbag_s2.png"); }
+  60% {
+    background-image: url("../images/LOGO_pacbag_s3.png"); }
+  80% {
+    background-image: url("../images/LOGO_pacbag_s4.png"); }
+  100% {
+    background-image: url("../images/LOGO_pacbag_s5.png"); } }
+
+@-webkit-keyframes slide-pac {
+  0% {
+    background-image: url("../images/LOGO_pacbag_s5.png"); }
+  20% {
+    background-image: url("../images/LOGO_pacbag_s1.png"); }
+  40% {
+    background-image: url("../images/LOGO_pacbag_s2.png"); }
+  60% {
+    background-image: url("../images/LOGO_pacbag_s3.png"); }
+  80% {
+    background-image: url("../images/LOGO_pacbag_s4.png"); }
+  100% {
+    background-image: url("../images/LOGO_pacbag_s5.png"); } }
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Miriam Libre', Calibri, sans-serif; }
+
+h2 {
+  font-size: 1.2em; }
+
+h2 {
+  text-align: center;
+  font-size: 1.5em; }
+
+h1 {
+  text-align: center;
+  font-size: 1.8em;
+  text-justify: auto; }
+
+li {
+  line-height: 1.5em; }
+  @media (max-width: 410px) {
+    li {
+      display: block; }
+      li h2 {
+        font-size: 1.5em;
+        padding-top: 1em; } }
+  @media (min-width: 410px) {
+    li {
+      display: inline-block;
+      margin: 1em; }
+      li h2 {
+        font-size: 1.2em; } }
+
+.container {
+  max-width: 500px;
+  height: 100vh;
+  margin: 10vh auto; }
+
+.container4headers {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  margin: 1em auto; }
+
+.forLogo {
+  margin: 5% auto;
+  animation: slide-pac 10s infinite;
+  -webkit-animation: slide-pac 10s infinite;
+  background-size: contain;
+  background-repeat: no-repeat; }
+  .forLogo .logo {
+    max-width: 100%; }
+  @media (max-width: 410px) {
+    .forLogo {
+      width: 80vw;
+      height: 73.85445vw; } }
+  @media (min-width: 410px) {
+    .forLogo {
+      width: 371px;
+      height: 274px; } }
+
+#cont4icons {
+  width: 130px;
+  height: 30px;
+  margin: 2% auto; }
+
+.iconF {
+  background-image: url("../images/facebook_icon.png"); }
+  .iconF:hover {
+    background-position: center; }
+  .iconF :visited {
+    background-position: top; }
+
+.iconI {
+  background-image: url("../images/instagram_icon.png"); }
+  .iconI:hover {
+    background-position: center; }
+  .iconI :visited {
+    background-position: top; }
+
+.iconF, .iconI {
+  width: 30px;
+  height: 30px;
+  margin-top: 1em;
+  background-position: bottom;
+  background-size: cover; }
+  .iconF :visited, .iconI :visited {
+    background-position: top; }
+
+/*# sourceMappingURL=style.css.map */
